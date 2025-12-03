@@ -2,7 +2,6 @@
 const http = require('node:http');
 const fs = require('fs');
 const path = require('path');
-
 const PUBLIC_DIR = path.join(__dirname, 'public');
 const DATA_DIR = path.join(__dirname, 'data');
 const USERS_FILE = path.join(DATA_DIR, 'users.json');
