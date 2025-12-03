@@ -94,5 +94,8 @@ const server = http.createServer((req, res) => {
   serveStatic(req, res);
 });
 
-const PORT = 8001;
-server.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+const PORT = process.env.PORT || 8001;
+
+server.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
